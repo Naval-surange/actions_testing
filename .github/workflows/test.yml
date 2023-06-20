@@ -2,7 +2,11 @@ name: testing
 
 on:
   workflow_dispatch:
-
+    inputs:
+      res_id:
+        description: 'Resource ID'
+        required: true
+        type: string
 jobs:
   do-something:
     runs-on: ubuntu-latest
