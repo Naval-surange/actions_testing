@@ -95,7 +95,7 @@ def generateModel(id):
         def increase_indent(self, flow=False, indentless=False):
             return super(MyDumper, self).increase_indent(flow, False)
 
-    with open(name+".yml", 'w') as outfile:
+    with open("./model/cubes"+name+".yml", 'w') as outfile:
         outfile.write(yaml.dump(yml_dict,Dumper=MyDumper,sort_keys=False))
         outfile.write("    sql_table: \"public.\\\""+id+"\\\"\"")
         outfile.write("\n")
