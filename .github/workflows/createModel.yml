@@ -1,9 +1,12 @@
 name: Create Data Model
 
 on:
-  repository_dispatch:
-  schedule:
-    - cron: '0 0 * * 1' # At 00:00 on Monday
+  workflow_dispatch:
+    inputs:
+        res_id:
+          description: 'Resource ID'
+          required: true
+          type: string
 
 jobs:
   build:
@@ -24,7 +27,7 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python generateModel_RES_ID.py 
+        run: python generateModel_RES_ID.py  ${{ github.event.inputs.res_id }}
           
       - name: commit files
         run: |
