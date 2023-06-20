@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo command
-        run: echo "Hello World"
+        run: echo "Hello World ${{ github.event.inputs.res_id }}"
