@@ -4,3 +4,7 @@ Bankwise_ATM_POS:
 Food_and_Fertiliser:
 - res_id: 040e1001-d343-42ee-b6d9-f8190dd8b416
 - orignal_name: Food and Fertiliser Subsidy
+Basic_Statistical_Return:
+- res_id: fd6eaa8e-ce59-4a10-8237-d6bfcd2f5358
+- orignal_name: Basic Statistical Return (BSR)- Credit by Scheduled Commercial Banks
+    (SCBs)
