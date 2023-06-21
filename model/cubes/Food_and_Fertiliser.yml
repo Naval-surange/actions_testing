@@ -1,0 +1,21 @@
+cubes:
+  - name: Food_and_Fertiliser
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: year
+        sql: year
+        type: time
+    measures:
+      - name: food_subsidy
+        sql: SUM(food_subsidy)
+        type: number
+      - name: fertiliser_subsidy
+        sql: SUM(fertiliser_subsidy)
+        type: number
+    sql_table: "public.\"040e1001-d343-42ee-b6d9-f8190dd8b416\""

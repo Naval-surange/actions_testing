@@ -99,6 +99,21 @@ def generateModel(id):
         outfile.write(yaml.dump(yml_dict,Dumper=MyDumper,sort_keys=False))
         outfile.write("    sql_table: \"public.\\\""+id+"\\\"\"")
         outfile.write("\n")
+    
+    orignal_name = resourceData["result"]["name"]
+    cube_name = name
+    res_id = id
+
+    with open("cube_store_mapping.yml", 'r+') as file:
+        documents = yaml.full_load(file)
+        if not documents:
+            documents = {}
+        documents[cube_name] =  [{"res_id":res_id},{"orignal_name":orignal_name}]
+        file.seek(0)
+        yaml.dump(documents, file,sort_keys=False)
+
+
+
 
 import sys
 if(len(sys.argv) != 2):

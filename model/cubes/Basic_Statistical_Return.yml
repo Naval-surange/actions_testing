@@ -1,0 +1,48 @@
+cubes:
+  - name: Basic_Statistical_Return
+    joins: []
+    dimensions:
+      - name: region
+        sql: region
+        type: string
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: district_name
+        sql: district_name
+        type: string
+      - name: district_code
+        sql: district_code
+        type: string
+      - name: population_group
+        sql: population_group
+        type: string
+      - name: bank_group
+        sql: bank_group
+        type: string
+      - name: occupation_group
+        sql: occupation_group
+        type: string
+      - name: occupation_subgroup
+        sql: occupation_subgroup
+        type: string
+      - name: year
+        sql: year
+        type: time
+    measures:
+      - name: id
+        sql: SUM(id)
+        type: number
+      - name: no_of_accounts
+        sql: SUM(no_of_accounts)
+        type: number
+      - name: credit_limit
+        sql: SUM(credit_limit)
+        type: number
+      - name: amount_outstanding
+        sql: SUM(amount_outstanding)
+        type: number
+    sql_table: "public.\"fd6eaa8e-ce59-4a10-8237-d6bfcd2f5358\""

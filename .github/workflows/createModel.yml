@@ -31,13 +31,13 @@ jobs:
           
       - name: commit files
         run: |
-          git config --local user.email "naval.s@research.iiit.ac.in"
-          git config --local user.name "Naval-surange"
+          git config --local user.email "bipp@isb.edu"
+          git config --local user.name "bipp-isb"
           git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git diff-index --quiet HEAD || (git commit -a -m "Action:Create Model" --allow-empty)
           
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
         with:
-          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          github_token: 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
           branch: main 
