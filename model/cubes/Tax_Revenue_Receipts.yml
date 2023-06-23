@@ -1,0 +1,24 @@
+cubes:
+  - name: Tax_Revenue_Receipts
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: reciept_cat
+        sql: reciept_cat
+        type: string
+      - name: receipt_sub_cat
+        sql: receipt_sub_cat
+        type: string
+      - name: year
+        sql: year
+        type: time
+    measures:
+      - name: receipt_crore
+        sql: SUM(receipt_crore)
+        type: number
+    sql_table: "public.\"e3e0f1fd-25f8-40a5-ab6e-7be1228ca135\""

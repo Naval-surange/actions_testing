@@ -23,3 +23,6 @@ Credit_by_Scheduled:
 Deposits_of_Scheduled:
 - res_id: 7821ba9d-2f44-47d5-b8ba-b0f26cbca1ae
 - orignal_name: Deposits of Scheduled Commercial Banks
+Tax_Revenue_Receipts:
+- res_id: e3e0f1fd-25f8-40a5-ab6e-7be1228ca135
+- orignal_name: Tax Revenue Receipts
