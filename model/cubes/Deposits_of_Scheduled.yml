@@ -1,0 +1,36 @@
+cubes:
+  - name: Deposits_of_Scheduled
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: district_name
+        sql: district_name
+        type: string
+      - name: district_code
+        sql: district_code
+        type: string
+      - name: region
+        sql: region
+        type: string
+      - name: population_group
+        sql: population_group
+        type: string
+      - name: year
+        sql: year
+        type: time
+    measures:
+      - name: no_of_offices
+        sql: SUM(no_of_offices)
+        type: number
+      - name: no_of_accounts
+        sql: SUM(no_of_accounts)
+        type: number
+      - name: deposit_amount
+        sql: SUM(deposit_amount)
+        type: number
+    sql_table: "public.\"7821ba9d-2f44-47d5-b8ba-b0f26cbca1ae\""

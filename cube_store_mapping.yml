@@ -20,3 +20,6 @@ Exports_to_North:
 Credit_by_Scheduled:
 - res_id: 1e666821-8c49-4000-89ac-2a33659565e3
 - orignal_name: Credit by Scheduled Commercial Banks
+Deposits_of_Scheduled:
+- res_id: 7821ba9d-2f44-47d5-b8ba-b0f26cbca1ae
+- orignal_name: Deposits of Scheduled Commercial Banks
