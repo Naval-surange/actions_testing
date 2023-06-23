@@ -1,0 +1,39 @@
+cubes:
+  - name: Exports_to_North
+    joins: []
+    dimensions:
+      - name: country
+        sql: country
+        type: string
+      - name: country_code_iso_2
+        sql: country_code_iso_2
+        type: string
+      - name: country_region
+        sql: country_region
+        type: string
+      - name: subregion
+        sql: subregion
+        type: string
+      - name: unsd_code
+        sql: unsd_code
+        type: string
+      - name: hs_code
+        sql: hs_code
+        type: string
+      - name: commodity
+        sql: commodity
+        type: string
+      - name: date
+        sql: date
+        type: time
+    measures:
+      - name: dollars_millions
+        sql: SUM(dollars_millions)
+        type: number
+      - name: quantity_thousands
+        sql: SUM(quantity_thousands)
+        type: number
+      - name: rupees_lakhs
+        sql: SUM(rupees_lakhs)
+        type: number
+    sql_table: "public.\"468c621f-362a-4b0c-9f03-05bc978a8a62\""

@@ -14,3 +14,6 @@ bankwise_atm:
 dummy_dataset:
 - res_id: 8d6378ac-97f3-4117-9209-500319f2a9b6
 - orignal_name: dummy_dataset
+Exports_to_North:
+- res_id: 468c621f-362a-4b0c-9f03-05bc978a8a62
+- orignal_name: Exports to North and South American Countries
