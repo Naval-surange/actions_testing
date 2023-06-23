@@ -1,0 +1,93 @@
+cubes:
+  - name: bankwise_atm
+    joins: []
+    dimensions:
+      - name: bank_name
+        sql: bank_name
+        type: string
+      - name: no_of_bharat_qr_codes
+        sql: no_of_bharat_qr_codes
+        type: string
+      - name: no_of_upi_qr_codes
+        sql: no_of_upi_qr_codes
+        type: string
+      - name: month
+        sql: month
+        type: time
+    measures:
+      - name: id
+        sql: SUM(id)
+        type: number
+      - name: no_of_onsite_atms
+        sql: SUM(no_of_onsite_atms)
+        type: number
+      - name: no_of_offsite_atms
+        sql: SUM(no_of_offsite_atms)
+        type: number
+      - name: no_of_micro_atms
+        sql: SUM(no_of_micro_atms)
+        type: number
+      - name: no_of_pos_terminals
+        sql: SUM(no_of_pos_terminals)
+        type: number
+      - name: no_of_credit_cards
+        sql: SUM(no_of_credit_cards)
+        type: number
+      - name: no_of_debit_cards
+        sql: SUM(no_of_debit_cards)
+        type: number
+      - name: credit_card_transactions_at_pos_volume
+        sql: SUM(credit_card_transactions_at_pos_volume)
+        type: number
+      - name: credit_card_transactions_at_pos_value
+        sql: SUM(credit_card_transactions_at_pos_value)
+        type: number
+      - name: credit_card_transactions_at_e_com_volume
+        sql: SUM(credit_card_transactions_at_e_com_volume)
+        type: number
+      - name: credit_card_transactions_at_e_com_value
+        sql: SUM(credit_card_transactions_at_e_com_value)
+        type: number
+      - name: credit_card_transactions_at_others_volume
+        sql: SUM(credit_card_transactions_at_others_volume)
+        type: number
+      - name: credit_card_transactions_at_others_value
+        sql: SUM(credit_card_transactions_at_others_value)
+        type: number
+      - name: debit_card_transactions_at_pos_volume
+        sql: SUM(debit_card_transactions_at_pos_volume)
+        type: number
+      - name: debit_card_transactions_at_pos_value
+        sql: SUM(debit_card_transactions_at_pos_value)
+        type: number
+      - name: debit_card_transactions_at_e_com_volume
+        sql: SUM(debit_card_transactions_at_e_com_volume)
+        type: number
+      - name: debit_card_transactions_at_e_com_value
+        sql: SUM(debit_card_transactions_at_e_com_value)
+        type: number
+      - name: debit_card_transactions_at_others_volume
+        sql: SUM(debit_card_transactions_at_others_volume)
+        type: number
+      - name: debit_card_transactions_at_others_value
+        sql: SUM(debit_card_transactions_at_others_value)
+        type: number
+      - name: cash_withdrawl_at_atm_using_credit_card_volume
+        sql: SUM(cash_withdrawl_at_atm_using_credit_card_volume)
+        type: number
+      - name: cash_withdrawl_at_atm_using_credit_card_value
+        sql: SUM(cash_withdrawl_at_atm_using_credit_card_value)
+        type: number
+      - name: cash_withdrawl_at_atm_using_debit_card_volume
+        sql: SUM(cash_withdrawl_at_atm_using_debit_card_volume)
+        type: number
+      - name: cash_withdrawl_at_atm_using_debit_card_value
+        sql: SUM(cash_withdrawl_at_atm_using_debit_card_value)
+        type: number
+      - name: cash_withdrawl_at_pos_using_debit_card_volume
+        sql: SUM(cash_withdrawl_at_pos_using_debit_card_volume)
+        type: number
+      - name: cash_withdrawl_at_pos_using_debit_card_value
+        sql: SUM(cash_withdrawl_at_pos_using_debit_card_value)
+        type: number
+    sql_table: "public.\"9ab34f31-78d5-49da-a43f-dd17e4d3179f\""

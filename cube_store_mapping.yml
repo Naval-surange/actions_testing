@@ -8,3 +8,6 @@ Basic_Statistical_Return:
 - res_id: fd6eaa8e-ce59-4a10-8237-d6bfcd2f5358
 - orignal_name: Basic Statistical Return (BSR)- Credit by Scheduled Commercial Banks
     (SCBs)
+bankwise_atm:
+- res_id: 9ab34f31-78d5-49da-a43f-dd17e4d3179f
+- orignal_name: bankwise_atm
