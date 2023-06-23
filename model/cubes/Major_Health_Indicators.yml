@@ -1,0 +1,888 @@
+cubes:
+  - name: Major_Health_Indicators
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: district_name
+        sql: district_name
+        type: string
+      - name: district_code
+        sql: district_code
+        type: string
+      - name: subdistrict_name
+        sql: subdistrict_name
+        type: string
+      - name: subdistrict_code
+        sql: subdistrict_code
+        type: string
+      - name: sector
+        sql: sector
+        type: string
+      - name: date
+        sql: date
+        type: time
+      - name: child_immunisation_911months_je_1st_dose
+        sql: child_immunisation_911months_je_1st_dose
+        type: time
+      - name: child_immunisation_911months_measles_1st_dose
+        sql: child_immunisation_911months_measles_1st_dose
+        type: time
+      - name: child_immune_9_11_months_measles_rubella_1st_dose
+        sql: child_immune_9_11_months_measles_rubella_1st_dose
+        type: time
+      - name: child_9_11_months_fully_immunized_female
+        sql: child_9_11_months_fully_immunized_female
+        type: time
+      - name: child_9_11_months_fully_immunized_male
+        sql: child_9_11_months_fully_immunized_male
+        type: time
+      - name: children_more_than_10_years_received_tt10
+        sql: children_more_than_10_years_received_tt10
+        type: time
+      - name: children_more_than_16_years_received_tt16
+        sql: children_more_than_16_years_received_tt16
+        type: time
+      - name: injectable_contraceptiveantara_program_second_dose
+        sql: injectable_contraceptiveantara_program_second_dose
+        type: time
+      - name: number_of_child_deaths_1_5_years_due_to_diarrhoea
+        sql: number_of_child_deaths_1_5_years_due_to_diarrhoea
+        type: time
+      - name: child_deaths_1_5_years_due_to_fever_related
+        sql: child_deaths_1_5_years_due_to_fever_related
+        type: time
+      - name: number_of_child_deaths_1_5_years_due_to_measles
+        sql: number_of_child_deaths_1_5_years_due_to_measles
+        type: time
+      - name: number_of_child_deaths_1_5_years_due_to_others
+        sql: number_of_child_deaths_1_5_years_due_to_others
+        type: time
+      - name: number_of_child_deaths_1_5_years_due_to_pneumonia
+        sql: number_of_child_deaths_1_5_years_due_to_pneumonia
+        type: time
+      - name: children_12_59_months_provided_albendazole
+        sql: children_12_59_months_provided_albendazole
+        type: time
+      - name: children_6_59_months_8_10_doses_1ml_of_ifa_bi_weekly
+        sql: children_6_59_months_8_10_doses_1ml_of_ifa_bi_weekly
+        type: time
+      - name: children_more_than_16_months_je_vaccine
+        sql: children_more_than_16_months_je_vaccine
+        type: time
+      - name: infant_deaths_1_12_months_due_to_diarrhoea
+        sql: infant_deaths_1_12_months_due_to_diarrhoea
+        type: time
+      - name: infant_deaths_1_12_months_due_to_fever_related
+        sql: infant_deaths_1_12_months_due_to_fever_related
+        type: time
+      - name: number_of_infant_deaths_1_12_months_due_to_measles
+        sql: number_of_infant_deaths_1_12_months_due_to_measles
+        type: time
+      - name: number_of_infant_deaths_1_12_months_due_to_others
+        sql: number_of_infant_deaths_1_12_months_due_to_others
+        type: time
+      - name: infant_deaths_1_12_months_due_to_pneumonia
+        sql: infant_deaths_1_12_months_due_to_pneumonia
+        type: time
+      - name: newborns_breast_fed_within_1_hour_of_birth
+        sql: newborns_breast_fed_within_1_hour_of_birth
+        type: time
+      - name: post_abortion_sterilizations_7_days_of_abortion
+        sql: post_abortion_sterilizations_7_days_of_abortion
+        type: time
+      - name: post_abortion_12_days_of_abortion_iucd_insertions
+        sql: post_abortion_12_days_of_abortion_iucd_insertions
+        type: time
+      - name: postpartum_sterilizations_within_7_days_of_delivery
+        sql: postpartum_sterilizations_within_7_days_of_delivery
+        type: time
+      - name: postpartum_within_48_hours_of_delivery_iucd_insertion
+        sql: postpartum_within_48_hours_of_delivery_iucd_insertion
+        type: time
+      - name: insttl_deliveries_women_discharged_48_hours
+        sql: insttl_deliveries_women_discharged_48_hours
+        type: time
+      - name: total_number_of_blood_units_issued_in_year
+        sql: total_number_of_blood_units_issued_in_year
+        type: time
+      - name: women_1st_post_partum_checkup_48_hours_and_14_days
+        sql: women_1st_post_partum_checkup_48_hours_and_14_days
+        type: time
+      - name: women_1st_post_partum_checkup_48_hours_home_delivery
+        sql: women_1st_post_partum_checkup_48_hours_home_delivery
+        type: time
+    measures:
+      - name: abortion_spontaneous
+        sql: SUM(abortion_spontaneous)
+        type: number
+      - name: allopathic_outpatient_attendance
+        sql: SUM(allopathic_outpatient_attendance)
+        type: number
+      - name: ayush_outpatient_attendance
+        sql: SUM(ayush_outpatient_attendance)
+        type: number
+      - name: blood_units_issued_replaced_by_family_donations
+        sql: SUM(blood_units_issued_replaced_by_family_donations)
+        type: number
+      - name: boys_registered_in_afhc
+        sql: SUM(boys_registered_in_afhc)
+        type: number
+      - name: child_immunisation_bcg
+        sql: SUM(child_immunisation_bcg)
+        type: number
+      - name: child_immunisation_dpt1
+        sql: SUM(child_immunisation_dpt1)
+        type: number
+      - name: child_immunisation_dpt2
+        sql: SUM(child_immunisation_dpt2)
+        type: number
+      - name: child_immunisation_dpt3
+        sql: SUM(child_immunisation_dpt3)
+        type: number
+      - name: child_immunisation_dpt_1st_booster
+        sql: SUM(child_immunisation_dpt_1st_booster)
+        type: number
+      - name: child_immunisation_hepatitisb0_birth_dose
+        sql: SUM(child_immunisation_hepatitisb0_birth_dose)
+        type: number
+      - name: child_immunisation_hepatitisb1
+        sql: SUM(child_immunisation_hepatitisb1)
+        type: number
+      - name: child_immunisation_hepatitisb2
+        sql: SUM(child_immunisation_hepatitisb2)
+        type: number
+      - name: child_immunisation_hepatitisb3
+        sql: SUM(child_immunisation_hepatitisb3)
+        type: number
+      - name: child_immune_polio_vaccine_1_ipv_1
+        sql: SUM(child_immune_polio_vaccine_1_ipv_1)
+        type: number
+      - name: child_immune_polio_vaccine_2_ipv_2
+        sql: SUM(child_immune_polio_vaccine_2_ipv_2)
+        type: number
+      - name: child_immunisation_je_1st_dose
+        sql: SUM(child_immunisation_je_1st_dose)
+        type: number
+      - name: child_immunisation_measles1st_dose
+        sql: SUM(child_immunisation_measles1st_dose)
+        type: number
+      - name: child_immune_more_than_16_mnths_measles_2
+        sql: SUM(child_immune_more_than_16_mnths_measles_2)
+        type: number
+      - name: child_immune_measles_mumps_rubella_mmr_vaccine
+        sql: SUM(child_immune_measles_mumps_rubella_mmr_vaccine)
+        type: number
+      - name: child_immunisation_measles_rubella_mr_1st_dose
+        sql: SUM(child_immunisation_measles_rubella_mr_1st_dose)
+        type: number
+      - name: child_immune_16_24_measles_mumps_rubella_mmr_2
+        sql: SUM(child_immune_16_24_measles_mumps_rubella_mmr_2)
+        type: number
+      - name: child_immunisation_opv1
+        sql: SUM(child_immunisation_opv1)
+        type: number
+      - name: child_immunisation_opv2
+        sql: SUM(child_immunisation_opv2)
+        type: number
+      - name: child_immunisation_opv3
+        sql: SUM(child_immunisation_opv3)
+        type: number
+      - name: child_immunisation_opv_0_birth_dose
+        sql: SUM(child_immunisation_opv_0_birth_dose)
+        type: number
+      - name: child_immunisation_opv_booster
+        sql: SUM(child_immunisation_opv_booster)
+        type: number
+      - name: child_immunisation_pentavalent_1
+        sql: SUM(child_immunisation_pentavalent_1)
+        type: number
+      - name: child_immunisation_pentavalent_2
+        sql: SUM(child_immunisation_pentavalent_2)
+        type: number
+      - name: child_immunisation_pentavalent_3
+        sql: SUM(child_immunisation_pentavalent_3)
+        type: number
+      - name: child_immunisation_rotavirus_1
+        sql: SUM(child_immunisation_rotavirus_1)
+        type: number
+      - name: child_immunisation_rotavirus_2
+        sql: SUM(child_immunisation_rotavirus_2)
+        type: number
+      - name: child_immunisation_rotavirus_3
+        sql: SUM(child_immunisation_rotavirus_3)
+        type: number
+      - name: child_immunisation_typhoid
+        sql: SUM(child_immunisation_typhoid)
+        type: number
+      - name: child_immunisation_vitamin_a_dose_1
+        sql: SUM(child_immunisation_vitamin_a_dose_1)
+        type: number
+      - name: child_immunisation_vitamin_a_dose_5
+        sql: SUM(child_immunisation_vitamin_a_dose_5)
+        type: number
+      - name: child_immunisation_vitamin_a_dose_9
+        sql: SUM(child_immunisation_vitamin_a_dose_9)
+        type: number
+      - name: child_immunisation_vitamin_k1_birth_dose
+        sql: SUM(child_immunisation_vitamin_k1_birth_dose)
+        type: number
+      - name: childhood_diseases_acute_flaccid_paralysisafp
+        sql: SUM(childhood_diseases_acute_flaccid_paralysisafp)
+        type: number
+      - name: childhood_diseases_asthma
+        sql: SUM(childhood_diseases_asthma)
+        type: number
+      - name: childhood_diseases_diarrhoea
+        sql: SUM(childhood_diseases_diarrhoea)
+        type: number
+      - name: childhood_diseases_diarrhoea_treated_in_inpatients
+        sql: SUM(childhood_diseases_diarrhoea_treated_in_inpatients)
+        type: number
+      - name: childhood_diseases_diphtheria
+        sql: SUM(childhood_diseases_diphtheria)
+        type: number
+      - name: childhood_diseases_malaria
+        sql: SUM(childhood_diseases_malaria)
+        type: number
+      - name: childhood_diseases_measles
+        sql: SUM(childhood_diseases_measles)
+        type: number
+      - name: childhood_diseases_pertussis
+        sql: SUM(childhood_diseases_pertussis)
+        type: number
+      - name: childhood_diseases_pneumonia
+        sql: SUM(childhood_diseases_pneumonia)
+        type: number
+      - name: childhood_diseases_sepsis
+        sql: SUM(childhood_diseases_sepsis)
+        type: number
+      - name: childhood_diseases_severe_acute_malnutrition_sam
+        sql: SUM(childhood_diseases_severe_acute_malnutrition_sam)
+        type: number
+      - name: childhood_diseases_tetanus_neonatorum
+        sql: SUM(childhood_diseases_tetanus_neonatorum)
+        type: number
+      - name: childhood_diseases_tuberculosis_tb
+        sql: SUM(childhood_diseases_tuberculosis_tb)
+        type: number
+      - name: children_admitted_with_upper_respiratory_infections
+        sql: SUM(children_admitted_with_upper_respiratory_infections)
+        type: number
+      - name: children_more_than_5_yrs_received_dpt5_2nd_booster
+        sql: SUM(children_more_than_5_yrs_received_dpt5_2nd_booster)
+        type: number
+      - name: complications_following_female_sterilization
+        sql: SUM(complications_following_female_sterilization)
+        type: number
+      - name: complications_following_male_sterilization
+        sql: SUM(complications_following_male_sterilization)
+        type: number
+      - name: csections_performed_at_night_8_pm_8_am
+        sql: SUM(csections_performed_at_night_8_pm_8_am)
+        type: number
+      - name: deaths_following_female_sterilization
+        sql: SUM(deaths_following_female_sterilization)
+        type: number
+      - name: deaths_following_male_sterilization
+        sql: SUM(deaths_following_male_sterilization)
+        type: number
+      - name: dengue_enzyme_immuno_sorbent_assay_elisa_positive
+        sql: SUM(dengue_enzyme_immuno_sorbent_assay_elisa_positive)
+        type: number
+      - name: dengue_rdt_test_positive
+        sql: SUM(dengue_rdt_test_positive)
+        type: number
+      - name: emergency_acute_caridiac_emergencies
+        sql: SUM(emergency_acute_caridiac_emergencies)
+        type: number
+      - name: emergency_burn
+        sql: SUM(emergency_burn)
+        type: number
+      - name: emergency_cva_cerebovascular_disease
+        sql: SUM(emergency_cva_cerebovascular_disease)
+        type: number
+      - name: emergency_obstetrics_complications
+        sql: SUM(emergency_obstetrics_complications)
+        type: number
+      - name: emergency_snake_bite
+        sql: SUM(emergency_snake_bite)
+        type: number
+      - name: emergency_trauma_accident_injury_poisoning_etc
+        sql: SUM(emergency_trauma_accident_injury_poisoning_etc)
+        type: number
+      - name: failures_following_female_sterilization
+        sql: SUM(failures_following_female_sterilization)
+        type: number
+      - name: failures_following_male_sterilization
+        sql: SUM(failures_following_male_sterilization)
+        type: number
+      - name: female_non_anc_hiv_number_positive
+        sql: SUM(female_non_anc_hiv_number_positive)
+        type: number
+      - name: female_non_anc_hiv_number_tested
+        sql: SUM(female_non_anc_hiv_number_tested)
+        type: number
+      - name: girls_registered_in_afhc
+        sql: SUM(girls_registered_in_afhc)
+        type: number
+      - name: immunisation_sessions_held
+        sql: SUM(immunisation_sessions_held)
+        type: number
+      - name: immunisation_sessions_planned
+        sql: SUM(immunisation_sessions_planned)
+        type: number
+      - name: infant_deaths_up_to_4_weeks_due_to_asphyxia
+        sql: SUM(infant_deaths_up_to_4_weeks_due_to_asphyxia)
+        type: number
+      - name: infant_deaths_up_to_4_weeks_due_to_other_causes
+        sql: SUM(infant_deaths_up_to_4_weeks_due_to_other_causes)
+        type: number
+      - name: infant_deaths_up_to_4_weeks_due_to_sepsis
+        sql: SUM(infant_deaths_up_to_4_weeks_due_to_sepsis)
+        type: number
+      - name: infant_deaths_within_24_hrs1_to_23_hrs_of_birth
+        sql: SUM(infant_deaths_within_24_hrs1_to_23_hrs_of_birth)
+        type: number
+      - name: injectable_contraceptiveantara_program_first_dose
+        sql: SUM(injectable_contraceptiveantara_program_first_dose)
+        type: number
+      - name: injectable_contraceptive_antara_fourth_or_more
+        sql: SUM(injectable_contraceptive_antara_fourth_or_more)
+        type: number
+      - name: injectable_contraceptiveantara_program_third_dose
+        sql: SUM(injectable_contraceptiveantara_program_third_dose)
+        type: number
+      - name: inpatient_asthma_copd_respiratory_infections
+        sql: SUM(inpatient_asthma_copd_respiratory_infections)
+        type: number
+      - name: inpatient_deaths_female
+        sql: SUM(inpatient_deaths_female)
+        type: number
+      - name: inpatient_deaths_male
+        sql: SUM(inpatient_deaths_male)
+        type: number
+      - name: inpatient_dengue
+        sql: SUM(inpatient_dengue)
+        type: number
+      - name: inpatient_diarrhea_with_dehydration
+        sql: SUM(inpatient_diarrhea_with_dehydration)
+        type: number
+      - name: inpatient_female_adults
+        sql: SUM(inpatient_female_adults)
+        type: number
+      - name: inpatient_female_children18yrs
+        sql: SUM(inpatient_female_children18yrs)
+        type: number
+      - name: inpatient_head_count_at_midnight
+        sql: SUM(inpatient_head_count_at_midnight)
+        type: number
+      - name: inpatient_hepatitis
+        sql: SUM(inpatient_hepatitis)
+        type: number
+      - name: inpatient_malaria
+        sql: SUM(inpatient_malaria)
+        type: number
+      - name: inpatient_male_adults
+        sql: SUM(inpatient_male_adults)
+        type: number
+      - name: inpatient_male_children18yrs
+        sql: SUM(inpatient_male_children18yrs)
+        type: number
+      - name: inpatient_pyrexia_of_unknown_origin_puo
+        sql: SUM(inpatient_pyrexia_of_unknown_origin_puo)
+        type: number
+      - name: inpatient_tuberculosis
+        sql: SUM(inpatient_tuberculosis)
+        type: number
+      - name: inpatient_typhoid
+        sql: SUM(inpatient_typhoid)
+        type: number
+      - name: kala_azar_positive_cases
+        sql: SUM(kala_azar_positive_cases)
+        type: number
+      - name: kala_azar_rdt_tests_conducted
+        sql: SUM(kala_azar_rdt_tests_conducted)
+        type: number
+      - name: live_birth_female
+        sql: SUM(live_birth_female)
+        type: number
+      - name: live_birth_male
+        sql: SUM(live_birth_male)
+        type: number
+      - name: major_surgeries_exclude_obstrics_gynae_and_opt_etc
+        sql: SUM(major_surgeries_exclude_obstrics_gynae_and_opt_etc)
+        type: number
+      - name: malaria_micro_test_plasmodium_falciparum_positive
+        sql: SUM(malaria_micro_test_plasmodium_falciparum_positive)
+        type: number
+      - name: malaria_microscopy_tests_plasmodium_vivax_positive
+        sql: SUM(malaria_microscopy_tests_plasmodium_vivax_positive)
+        type: number
+      - name: malaria_rdt_plamodium_falciparum_test_positive
+        sql: SUM(malaria_rdt_plamodium_falciparum_test_positive)
+        type: number
+      - name: malaria_rdt_plasmodium_vivax_test_positive
+        sql: SUM(malaria_rdt_plasmodium_vivax_test_positive)
+        type: number
+      - name: male_hiv_number_positive
+        sql: SUM(male_hiv_number_positive)
+        type: number
+      - name: male_hiv_number_tested
+        sql: SUM(male_hiv_number_tested)
+        type: number
+      - name: mtp_more_than_12_weeks_of_pregnancy
+        sql: SUM(mtp_more_than_12_weeks_of_pregnancy)
+        type: number
+      - name: mtp_up_to_12_weeks_of_pregnancy
+        sql: SUM(mtp_up_to_12_weeks_of_pregnancy)
+        type: number
+      - name: new_cases_of_pw_with_hypertension_detected
+        sql: SUM(new_cases_of_pw_with_hypertension_detected)
+        type: number
+      - name: new_rtisti_cases_identified_female
+        sql: SUM(new_rtisti_cases_identified_female)
+        type: number
+      - name: new_rtisti_cases_identified_male
+        sql: SUM(new_rtisti_cases_identified_male)
+        type: number
+      - name: admissions_in_nbsu_new_born_stabilisation_unit
+        sql: SUM(admissions_in_nbsu_new_born_stabilisation_unit)
+        type: number
+      - name: adolscent_deaths_due_to_accidents_burn_cases
+        sql: SUM(adolscent_deaths_due_to_accidents_burn_cases)
+        type: number
+      - name: adolscent_deaths_due_to_animal_bites_and_stings
+        sql: SUM(adolscent_deaths_due_to_animal_bites_and_stings)
+        type: number
+      - name: number_of_adolscent_adult_deaths_due_to_cancer
+        sql: SUM(number_of_adolscent_adult_deaths_due_to_cancer)
+        type: number
+      - name: adolscent_deaths_due_to_causes_not_known
+        sql: SUM(adolscent_deaths_due_to_causes_not_known)
+        type: number
+      - name: adolscent_deaths_due_to_diarrhoeal_diseases
+        sql: SUM(adolscent_deaths_due_to_diarrhoeal_diseases)
+        type: number
+      - name: adolscent_deaths_due_to_heart_disease_hypertension
+        sql: SUM(adolscent_deaths_due_to_heart_disease_hypertension)
+        type: number
+      - name: number_of_adolscent_adult_deaths_due_to_hivaids
+        sql: SUM(number_of_adolscent_adult_deaths_due_to_hivaids)
+        type: number
+      - name: adolscent_deaths_due_to_known_acute_disease
+        sql: SUM(adolscent_deaths_due_to_known_acute_disease)
+        type: number
+      - name: adolscent_deaths_due_to_known_chronic_disease
+        sql: SUM(adolscent_deaths_due_to_known_chronic_disease)
+        type: number
+      - name: adolscent_deaths_due_to_neurological_disease_stroke
+        sql: SUM(adolscent_deaths_due_to_neurological_disease_stroke)
+        type: number
+      - name: adolscent_deaths_due_to_other_fever_related
+        sql: SUM(adolscent_deaths_due_to_other_fever_related)
+        type: number
+      - name: adolscent_deaths_due_to_resp_dis_and_infction_not_tb
+        sql: SUM(adolscent_deaths_due_to_resp_dis_and_infction_not_tb)
+        type: number
+      - name: number_of_adolscent_adult_deaths_due_to_suicide
+        sql: SUM(number_of_adolscent_adult_deaths_due_to_suicide)
+        type: number
+      - name: adolscent_deaths_due_to_tuberculosis
+        sql: SUM(adolscent_deaths_due_to_tuberculosis)
+        type: number
+      - name: anganwadi_centres_uphcs_conducted_vhnds_uhnds
+        sql: SUM(anganwadi_centres_uphcs_conducted_vhnds_uhnds)
+        type: number
+      - name: number_of_babies_diagnosed_with_congenital_syphilis
+        sql: SUM(number_of_babies_diagnosed_with_congenital_syphilis)
+        type: number
+      - name: number_of_babies_treated_for_congenital_syphilis
+        sql: SUM(number_of_babies_treated_for_congenital_syphilis)
+        type: number
+      - name: number_of_blood_transfusions_done
+        sql: SUM(number_of_blood_transfusions_done)
+        type: number
+      - name: number_of_blood_units_issued
+        sql: SUM(number_of_blood_units_issued)
+        type: number
+      - name: number_of_cases_of_aefi_abscess
+        sql: SUM(number_of_cases_of_aefi_abscess)
+        type: number
+      - name: number_of_cases_of_aefi_death
+        sql: SUM(number_of_cases_of_aefi_death)
+        type: number
+      - name: number_of_cases_of_aefi_others
+        sql: SUM(number_of_cases_of_aefi_others)
+        type: number
+      - name: pregnant_women_with_obstetric_complications
+        sql: SUM(pregnant_women_with_obstetric_complications)
+        type: number
+      - name: centchroman_weekly_pill_strips_distributed
+        sql: SUM(centchroman_weekly_pill_strips_distributed)
+        type: number
+      - name: number_of_children_admitted_in_nrc
+        sql: SUM(number_of_children_admitted_in_nrc)
+        type: number
+      - name: children_discharged_target_weight_gain_from_nrcs
+        sql: SUM(children_discharged_target_weight_gain_from_nrcs)
+        type: number
+      - name: number_of_combined_oral_pill_cycles_distributed
+        sql: SUM(number_of_combined_oral_pill_cycles_distributed)
+        type: number
+      - name: complicated_pregnancies_treated_blood_transfusion
+        sql: SUM(complicated_pregnancies_treated_blood_transfusion)
+        type: number
+      - name: number_of_complications_following_iucd_insertion
+        sql: SUM(number_of_complications_following_iucd_insertion)
+        type: number
+      - name: number_of_condom_pieces_distributed
+        sql: SUM(number_of_condom_pieces_distributed)
+        type: number
+      - name: deaths_due_to_acute_encephelitis_syndrome_aes
+        sql: SUM(deaths_due_to_acute_encephelitis_syndrome_aes)
+        type: number
+      - name: number_of_deaths_due_to_dengue
+        sql: SUM(number_of_deaths_due_to_dengue)
+        type: number
+      - name: number_of_deaths_due_to_japanese_encephalitis_je
+        sql: SUM(number_of_deaths_due_to_japanese_encephalitis_je)
+        type: number
+      - name: number_of_deaths_due_to_kala_azar
+        sql: SUM(number_of_deaths_due_to_kala_azar)
+        type: number
+      - name: deaths_due_to_malaria_plasmodium_falciparum
+        sql: SUM(deaths_due_to_malaria_plasmodium_falciparum)
+        type: number
+      - name: number_of_deaths_due_to_malaria_plasmodium_vivax
+        sql: SUM(number_of_deaths_due_to_malaria_plasmodium_vivax)
+        type: number
+      - name: number_of_deaths_occurring_at_emergency_department
+        sql: SUM(number_of_deaths_occurring_at_emergency_department)
+        type: number
+      - name: number_of_deaths_occurring_at_sncu
+        sql: SUM(number_of_deaths_occurring_at_sncu)
+        type: number
+      - name: number_of_dots_cases_completed_successfully
+        sql: SUM(number_of_dots_cases_completed_successfully)
+        type: number
+      - name: number_of_eclampsia_cases_managed_during_delivery
+        sql: SUM(number_of_eclampsia_cases_managed_during_delivery)
+        type: number
+      - name: number_of_emergency_contraceptive_pills_ecp_given
+        sql: SUM(number_of_emergency_contraceptive_pills_ecp_given)
+        type: number
+      - name: female_non_anc_stirti_attendees_positive_for_syphilis
+        sql: SUM(female_non_anc_stirti_attendees_positive_for_syphilis)
+        type: number
+      - name: female_non_anc_stirti_attendees_tested_for_syphilis
+        sql: SUM(female_non_anc_stirti_attendees_tested_for_syphilis)
+        type: number
+      - name: number_of_hb_tests_conducted
+        sql: SUM(number_of_hb_tests_conducted)
+        type: number
+      - name: home_deliveries_by_non_sba_birth_attndnt_relatives
+        sql: SUM(home_deliveries_by_non_sba_birth_attndnt_relatives)
+        type: number
+      - name: home_deliveries_by_skill_birth_attndnt_doctor_nurse
+        sql: SUM(home_deliveries_by_skill_birth_attndnt_doctor_nurse)
+        type: number
+      - name: immunisation_sessions_where_ashas_were_present
+        sql: SUM(immunisation_sessions_where_ashas_were_present)
+        type: number
+      - name: institutional_deliveries_including_csections
+        sql: SUM(institutional_deliveries_including_csections)
+        type: number
+      - name: interval_iucd_insertions_excluding_ppiucd_and_paiucd
+        sql: SUM(interval_iucd_insertions_excluding_ppiucd_and_paiucd)
+        type: number
+      - name: interval_minilap_not_postpartum_post_abortion_sterile
+        sql: SUM(interval_minilap_not_postpartum_post_abortion_sterile)
+        type: number
+      - name: number_of_iucd_removals
+        sql: SUM(number_of_iucd_removals)
+        type: number
+      - name: number_of_lab_tests_done
+        sql: SUM(number_of_lab_tests_done)
+        type: number
+      - name: laparoscopic_sterilizations_excl_post_abortion
+        sql: SUM(laparoscopic_sterilizations_excl_post_abortion)
+        type: number
+      - name: number_of_left_against_medical_advice_lama_cases
+        sql: SUM(number_of_left_against_medical_advice_lama_cases)
+        type: number
+      - name: male_stirti_attendees_found_positive_for_syphilis
+        sql: SUM(male_stirti_attendees_found_positive_for_syphilis)
+        type: number
+      - name: number_of_male_stirti_attendees_tested_for_syphilis
+        sql: SUM(number_of_male_stirti_attendees_tested_for_syphilis)
+        type: number
+      - name: number_of_maternal_deaths_due_to_abortion
+        sql: SUM(number_of_maternal_deaths_due_to_abortion)
+        type: number
+      - name: number_of_maternal_deaths_due_to_bleeding
+        sql: SUM(number_of_maternal_deaths_due_to_bleeding)
+        type: number
+      - name: number_of_maternal_deaths_due_to_high_fever
+        sql: SUM(number_of_maternal_deaths_due_to_high_fever)
+        type: number
+      - name: maternal_deaths_due_to_obstructedprolonged_labour
+        sql: SUM(maternal_deaths_due_to_obstructedprolonged_labour)
+        type: number
+      - name: maternal_deaths_due_to_other_causes_not_known
+        sql: SUM(maternal_deaths_due_to_other_causes_not_known)
+        type: number
+      - name: number_of_maternal_deaths_severe_hypertesnionfits
+        sql: SUM(number_of_maternal_deaths_severe_hypertesnionfits)
+        type: number
+      - name: mothers_provided_360_calcium_tablets_after_delivery
+        sql: SUM(mothers_provided_360_calcium_tablets_after_delivery)
+        type: number
+      - name: mothers_full_course_of_180_ifa_tablets_after_delivery
+        sql: SUM(mothers_full_course_of_180_ifa_tablets_after_delivery)
+        type: number
+      - name: newborns_admitted_in_sncu_referred_by_asha
+        sql: SUM(newborns_admitted_in_sncu_referred_by_asha)
+        type: number
+      - name: number_of_newborns_having_weight_less_than_25_kg
+        sql: SUM(number_of_newborns_having_weight_less_than_25_kg)
+        type: number
+      - name: newborns_6_hbnc_visits_institutional_delivery
+        sql: SUM(newborns_6_hbnc_visits_institutional_delivery)
+        type: number
+      - name: newborns_7_home_newborn_care_hbnc_visit_home_delivery
+        sql: SUM(newborns_7_home_newborn_care_hbnc_visit_home_delivery)
+        type: number
+      - name: number_of_newborns_weighed_at_birth
+        sql: SUM(number_of_newborns_weighed_at_birth)
+        type: number
+      - name: non_scalpel_vasectomy_nsv_conventional_conducted
+        sql: SUM(non_scalpel_vasectomy_nsv_conventional_conducted)
+        type: number
+      - name: number_of_ongoing_dots_patients_registered
+        sql: SUM(number_of_ongoing_dots_patients_registered)
+        type: number
+      - name: number_of_post_operative_surgical_site_infection
+        sql: SUM(number_of_post_operative_surgical_site_infection)
+        type: number
+      - name: number_of_pre_term_newborns__37_weeks_of_pregnancy
+        sql: SUM(number_of_pre_term_newborns__37_weeks_of_pregnancy)
+        type: number
+      - name: number_of_pregnancy_test_kits_ptk_used
+        sql: SUM(number_of_pregnancy_test_kits_ptk_used)
+        type: number
+      - name: number_of_pregnant_women_screened_for_hiv
+        sql: SUM(number_of_pregnant_women_screened_for_hiv)
+        type: number
+      - name: number_of_pregnant_women_tested_for_syphilis
+        sql: SUM(number_of_pregnant_women_tested_for_syphilis)
+        type: number
+      - name: pregnant_women_tested_found_positive_for_syphilis
+        sql: SUM(pregnant_women_tested_found_positive_for_syphilis)
+        type: number
+      - name: number_of_pw_given_180_iron_folic_acid_ifa_tablets
+        sql: SUM(number_of_pw_given_180_iron_folic_acid_ifa_tablets)
+        type: number
+      - name: number_of_pw_given_360_calcium_tablets
+        sql: SUM(number_of_pw_given_360_calcium_tablets)
+        type: number
+      - name: pw_given_anc_corticosteroids_pre_term_labour
+        sql: SUM(pw_given_anc_corticosteroids_pre_term_labour)
+        type: number
+      - name: pw_given_insulin_out_of_total_tested_positive_for_gdm
+        sql: SUM(pw_given_insulin_out_of_total_tested_positive_for_gdm)
+        type: number
+      - name: pw_given_one_albendazole_tablet_after_1st_trimester
+        sql: SUM(pw_given_one_albendazole_tablet_after_1st_trimester)
+        type: number
+      - name: pw_given_tablet_misoprostol_during_home_delivery
+        sql: SUM(pw_given_tablet_misoprostol_during_home_delivery)
+        type: number
+      - name: number_of_pw_giventt1
+        sql: SUM(number_of_pw_giventt1)
+        type: number
+      - name: number_of_pw_giventt2
+        sql: SUM(number_of_pw_giventt2)
+        type: number
+      - name: number_of_pw_giventt_booster
+        sql: SUM(number_of_pw_giventt_booster)
+        type: number
+      - name: number_of_pw_having_hb_level11_tested_cases71_to_109
+        sql: SUM(number_of_pw_having_hb_level11_tested_cases71_to_109)
+        type: number
+      - name: number_of_pw_having_hb_level7_tested_cases
+        sql: SUM(number_of_pw_having_hb_level7_tested_cases)
+        type: number
+      - name: number_of_pw_having_severe_anaemia_hb7_treated
+        sql: SUM(number_of_pw_having_severe_anaemia_hb7_treated)
+        type: number
+      - name: number_of_pw_received_4_or_more_anc_check_ups
+        sql: SUM(number_of_pw_received_4_or_more_anc_check_ups)
+        type: number
+      - name: pw_tested_for_blood_sugar_using_ogtt
+        sql: SUM(pw_tested_for_blood_sugar_using_ogtt)
+        type: number
+      - name: pw_tested_for_haemoglobin_hb_4_or
+        sql: SUM(pw_tested_for_haemoglobin_hb_4_or)
+        type: number
+      - name: number_of_pw_tested_positive_for_gdm
+        sql: SUM(number_of_pw_tested_positive_for_gdm)
+        type: number
+      - name: number_of_pw_tested_using_poc_test_for_syphilis
+        sql: SUM(number_of_pw_tested_using_poc_test_for_syphilis)
+        type: number
+      - name: number_of_rogi_kalyan_samiti_rks_meetings_held
+        sql: SUM(number_of_rogi_kalyan_samiti_rks_meetings_held)
+        type: number
+      - name: severely_underweight_children_health_checkup_05_yrs
+        sql: SUM(severely_underweight_children_health_checkup_05_yrs)
+        type: number
+      - name: syphilis_positive_pregnant_women_treated_for_syphilis
+        sql: SUM(syphilis_positive_pregnant_women_treated_for_syphilis)
+        type: number
+      - name: women_provided_with_post_abortion_mtp_contraception
+        sql: SUM(women_provided_with_post_abortion_mtp_contraception)
+        type: number
+      - name: operation_major_general_and_spinal_anaesthesia
+        sql: SUM(operation_major_general_and_spinal_anaesthesia)
+        type: number
+      - name: operation_minor_no_or_local_anaesthesia
+        sql: SUM(operation_minor_no_or_local_anaesthesia)
+        type: number
+      - name: out_of_above_pw_found_positive_for_syphilis
+        sql: SUM(out_of_above_pw_found_positive_for_syphilis)
+        type: number
+      - name: out_of_oprn_major_gynecology_hysterectomy_surgeries
+        sql: SUM(out_of_oprn_major_gynecology_hysterectomy_surgeries)
+        type: number
+      - name: out_of_registered_boys_received_clinical_services
+        sql: SUM(out_of_registered_boys_received_clinical_services)
+        type: number
+      - name: out_of_registered_boys_received_counselling
+        sql: SUM(out_of_registered_boys_received_counselling)
+        type: number
+      - name: out_of_registered_girls_received_clinical_services
+        sql: SUM(out_of_registered_girls_received_clinical_services)
+        type: number
+      - name: out_of_registered_girls_received_counselling
+        sql: SUM(out_of_registered_girls_received_counselling)
+        type: number
+      - name: out_of_the_above_number_screened_positive
+        sql: SUM(out_of_the_above_number_screened_positive)
+        type: number
+      - name: out_of_above_confirmed_with_hiv_infection_at_ictc
+        sql: SUM(out_of_above_confirmed_with_hiv_infection_at_ictc)
+        type: number
+      - name: new_cases_of_pw_with_hypertensio_cases_at_institution
+        sql: SUM(new_cases_of_pw_with_hypertensio_cases_at_institution)
+        type: number
+      - name: from_total_anc_registered_1st_trimester_in_12_weeks
+        sql: SUM(from_total_anc_registered_1st_trimester_in_12_weeks)
+        type: number
+      - name: out_of_the_total_number_of_hb_tests_having_hb_7_mg
+        sql: SUM(out_of_the_total_number_of_hb_tests_having_hb_7_mg)
+        type: number
+      - name: outborn_female
+        sql: SUM(outborn_female)
+        type: number
+      - name: outborn_male
+        sql: SUM(outborn_male)
+        type: number
+      - name: outpatient_acute_heart_diseases
+        sql: SUM(outpatient_acute_heart_diseases)
+        type: number
+      - name: outpatient_dental
+        sql: SUM(outpatient_dental)
+        type: number
+      - name: outpatient_diabetes
+        sql: SUM(outpatient_diabetes)
+        type: number
+      - name: outpatient_epilepsy
+        sql: SUM(outpatient_epilepsy)
+        type: number
+      - name: outpatient_hypertension
+        sql: SUM(outpatient_hypertension)
+        type: number
+      - name: outpatient_mental_illness
+        sql: SUM(outpatient_mental_illness)
+        type: number
+      - name: outpatient_oncology
+        sql: SUM(outpatient_oncology)
+        type: number
+      - name: outpatient_ophthalmic_related
+        sql: SUM(outpatient_ophthalmic_related)
+        type: number
+      - name: outpatient_stroke_paralysis
+        sql: SUM(outpatient_stroke_paralysis)
+        type: number
+      - name: patient_satisfaction_score_from_mera_aspatal
+        sql: SUM(patient_satisfaction_score_from_mera_aspatal)
+        type: number
+      - name: patients_registered_at_emergency_department
+        sql: SUM(patients_registered_at_emergency_department)
+        type: number
+      - name: post_abortion_mtp_complications_identified
+        sql: SUM(post_abortion_mtp_complications_identified)
+        type: number
+      - name: post_abortion_mtp_complications_treated
+        sql: SUM(post_abortion_mtp_complications_treated)
+        type: number
+      - name: postkalaazar_dermal_leishmaniasis_pkdl_cases
+        sql: SUM(postkalaazar_dermal_leishmaniasis_pkdl_cases)
+        type: number
+      - name: radiology_ultrasonography_usg
+        sql: SUM(radiology_ultrasonography_usg)
+        type: number
+      - name: radiology_xray
+        sql: SUM(radiology_xray)
+        type: number
+      - name: rdt_conducted_for_malaria
+        sql: SUM(rdt_conducted_for_malaria)
+        type: number
+      - name: rtisti_for_which_treatment_initiated_female
+        sql: SUM(rtisti_for_which_treatment_initiated_female)
+        type: number
+      - name: rtisti_for_which_treatment_initiated_male
+        sql: SUM(rtisti_for_which_treatment_initiated_male)
+        type: number
+      - name: special_newborn_care_unit_admissions_inborn_female
+        sql: SUM(special_newborn_care_unit_admissions_inborn_female)
+        type: number
+      - name: special_newborn_care_unit_admissions_inborn_male
+        sql: SUM(special_newborn_care_unit_admissions_inborn_male)
+        type: number
+      - name: still_birth
+        sql: SUM(still_birth)
+        type: number
+      - name: stock_out_rate_of_essential_drugs
+        sql: SUM(stock_out_rate_of_essential_drugs)
+        type: number
+      - name: tests_conducted_for_je
+        sql: SUM(tests_conducted_for_je)
+        type: number
+      - name: tests_positive_for_je
+        sql: SUM(tests_positive_for_je)
+        type: number
+      - name: total_blood_smears_examined_for_malaria
+        sql: SUM(total_blood_smears_examined_for_malaria)
+        type: number
+      - name: total_c_section_deliveries_performed
+        sql: SUM(total_c_section_deliveries_performed)
+        type: number
+      - name: facility_based_maternal_death_reviews_done
+        sql: SUM(facility_based_maternal_death_reviews_done)
+        type: number
+      - name: total_number_of_pregnant_women_registered_for_anc
+        sql: SUM(total_number_of_pregnant_women_registered_for_anc)
+        type: number
+      - name: widal_tests_number_positive
+        sql: SUM(widal_tests_number_positive)
+        type: number
+      - name: widal_tests_number_tested
+        sql: SUM(widal_tests_number_tested)
+        type: number
+    sql_table: "public.\"8ce0e70d-4a27-493e-8a43-fe863f48851e\""
