@@ -29,3 +29,6 @@ Tax_Revenue_Receipts:
 Crop_Wise_Area:
 - res_id: f95054a9-783d-496c-b8df-add3cc23073c
 - orignal_name: Crop Wise Area Production Yield
+Issuer_Bank:
+- res_id: d2c2c204-ab1f-4f16-9d63-024eec172c8a
+- orignal_name: Issuer Bank

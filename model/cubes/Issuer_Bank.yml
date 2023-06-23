@@ -1,0 +1,21 @@
+cubes:
+  - name: Issuer_Bank
+    joins: []
+    dimensions:
+      - name: issuer_member_bank
+        sql: issuer_member_bank
+        type: string
+      - name: date
+        sql: date
+        type: time
+    measures:
+      - name: total_volume_(in_mn)
+        sql: SUM(total_volume_(in_mn))
+        type: number
+      - name: approved_percent
+        sql: SUM(approved_percent)
+        type: number
+      - name: deemed_approved_percent
+        sql: SUM(deemed_approved_percent)
+        type: number
+    sql_table: "public.\"d2c2c204-ab1f-4f16-9d63-024eec172c8a\""
