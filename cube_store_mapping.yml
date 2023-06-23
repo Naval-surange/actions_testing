@@ -26,3 +26,6 @@ Deposits_of_Scheduled:
 Tax_Revenue_Receipts:
 - res_id: e3e0f1fd-25f8-40a5-ab6e-7be1228ca135
 - orignal_name: Tax Revenue Receipts
+Crop_Wise_Area:
+- res_id: f95054a9-783d-496c-b8df-add3cc23073c
+- orignal_name: Crop Wise Area Production Yield

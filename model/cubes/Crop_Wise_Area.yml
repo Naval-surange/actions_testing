@@ -1,0 +1,51 @@
+cubes:
+  - name: Crop_Wise_Area
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: district_name
+        sql: district_name
+        type: string
+      - name: district_code
+        sql: district_code
+        type: string
+      - name: season
+        sql: season
+        type: string
+      - name: crop_code
+        sql: crop_code
+        type: string
+      - name: crop_name
+        sql: crop_name
+        type: string
+      - name: crop_type
+        sql: crop_type
+        type: string
+      - name: area_unit
+        sql: area_unit
+        type: string
+      - name: production_unit
+        sql: production_unit
+        type: string
+      - name: yield_unit
+        sql: yield_unit
+        type: string
+      - name: year
+        sql: year
+        type: time
+    measures:
+      - name: area
+        sql: SUM(area)
+        type: number
+      - name: production
+        sql: SUM(production)
+        type: number
+      - name: yield
+        sql: SUM(yield)
+        type: number
+    sql_table: "public.\"f95054a9-783d-496c-b8df-add3cc23073c\""
