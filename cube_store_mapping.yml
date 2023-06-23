@@ -17,3 +17,6 @@ dummy_dataset:
 Exports_to_North:
 - res_id: 468c621f-362a-4b0c-9f03-05bc978a8a62
 - orignal_name: Exports to North and South American Countries
+Credit_by_Scheduled:
+- res_id: 1e666821-8c49-4000-89ac-2a33659565e3
+- orignal_name: Credit by Scheduled Commercial Banks
