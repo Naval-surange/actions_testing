@@ -11,3 +11,6 @@ Basic_Statistical_Return:
 bankwise_atm:
 - res_id: 9ab34f31-78d5-49da-a43f-dd17e4d3179f
 - orignal_name: bankwise_atm
+dummy_dataset:
+- res_id: 8d6378ac-97f3-4117-9209-500319f2a9b6
+- orignal_name: dummy_dataset

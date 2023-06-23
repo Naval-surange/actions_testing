@@ -1,0 +1,6 @@
+cubes:
+  - name: dummy_dataset
+    joins: []
+    dimensions: []
+    measures: []
+    sql_table: "public.\"8d6378ac-97f3-4117-9209-500319f2a9b6\""
