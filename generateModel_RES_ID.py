@@ -7,8 +7,14 @@ def generateModel(id):
     Datasotre_API = f"https://ckan.indiadataportal.com/api/3/action/datastore_info?id={id}&include_unique=false"
     Resource_API = f"https://ckan.indiadataportal.com/api/3/action/resource_show?id={id}"
 
-
-    df = pd.read_json(Datasotre_API)
+    
+    try:
+        df = pd.read_json(Datasotre_API)
+    except:
+        print("datastore not found")
+        exit(0)
+    # print(df)
+    # return
     data = df['result']['fields']
 
     resourceData = pd.read_json(Resource_API)
