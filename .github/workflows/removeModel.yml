@@ -1,4 +1,4 @@
-name: Create Data Model
+name: remove Data Model
 
 on:
   workflow_dispatch:
