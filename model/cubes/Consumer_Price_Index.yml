@@ -1,0 +1,27 @@
+cubes:
+  - name: Consumer_Price_Index
+    joins: []
+    dimensions:
+      - name: state_name
+        sql: state_name
+        type: string
+      - name: state_code
+        sql: state_code
+        type: string
+      - name: sector
+        sql: sector
+        type: string
+      - name: commodity_group
+        sql: commodity_group
+        type: string
+      - name: month_year
+        sql: month_year
+        type: time
+    measures:
+      - name: cpi
+        sql: SUM(cpi)
+        type: number
+      - name: inflation_rate
+        sql: SUM(inflation_rate)
+        type: number
+    sql_table: "public.\"704aa548-a3ad-41f0-893f-b611c5b028a9\""
