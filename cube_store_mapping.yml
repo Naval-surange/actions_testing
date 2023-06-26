@@ -25,6 +25,3 @@ Issuer_Bank:
 Major_Health_Indicators:
 - res_id: 8ce0e70d-4a27-493e-8a43-fe863f48851e
 - orignal_name: Major Health Indicators at Sub-district Level
-Consumer_Price_Index:
-- res_id: 704aa548-a3ad-41f0-893f-b611c5b028a9
-- orignal_name: Consumer Price Index
