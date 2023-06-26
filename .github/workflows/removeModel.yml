@@ -1,0 +1,54 @@
+name: Create Data Model
+
+on:
+  workflow_dispatch:
+    inputs:
+        model_name:
+          description: 'Model Name'
+          required: true
+          type: string
+
+jobs:
+  Generate-Model:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # install the python version needed
+          
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          
+      - name: execute py script # run main.py
+        run: python removeModel.py  ${{ github.event.inputs.model_name }}
+          
+      - name: commit files
+        run: |
+          git config --local user.email "bipp@isb.edu"
+          git config --local user.name "bipp-isb"
+          git add -A
+          git diff-index --quiet HEAD || (git commit -a -m "Action:Create Model" --allow-empty)
+          
+      - name: push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
+          branch: main 
+        
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key:  ${{ secrets.SSH_PRIVATE_KEY }} 
+          known_hosts: Place-Holder
+          
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
+      - name: Deploy with rsync
+        run: rsync -avh --delete-excluded ./model/cubes/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/idpcubeuser/test 
